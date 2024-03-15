@@ -44,8 +44,34 @@ const HomePage = () => {
         </View>
       </View>
       <View style={{ flex: 0.055 }}></View>
-      <View style={styles.boxContainer}>
-        <View style={styles.box} />
+      <View style={styles.reviewPreviewContainer}>
+        <View style={styles.previewTagContainer}>
+          <Text style={[styles.pillTitle, styles.previewTagTitle]}>Funny</Text>
+        </View>
+        <View style={styles.previewTextColumn}>
+          <Text style={[styles.pillTitle, styles.previewColumnTitle]}>
+            Info:
+          </Text>
+          <Text style={styles.previewColumnText}>Relationship:</Text>
+          <Text style={styles.previewColumnText}>Time Known:</Text>
+          <Text style={styles.previewColumnText}>Last Interaction:</Text>
+        </View>
+        <View style={{ flex: 0.5 }}></View>
+        <View style={{ flexDirection: "row", gap: 15 }}>
+          <View style={[styles.pillShape, styles.addShadow]}>
+            <Text style={[styles.pillTitle, styles.previewPillTitle]}>
+              Tall
+            </Text>
+          </View>
+          <View style={[styles.pillShape, styles.addShadow]}>
+            <Text style={[styles.pillTitle, styles.previewPillTitle]}>
+              Creative
+            </Text>
+          </View>
+          <View style={[styles.pillShape, styles.addShadow]}>
+            <Text style={[styles.pillTitle, styles.previewPillTitle]}>Shy</Text>
+          </View>
+        </View>
       </View>
       <Image
         style={styles.smallerImage}

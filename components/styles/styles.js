@@ -13,6 +13,46 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
+  reviewPreviewContainer: {
+    width: '80%',
+    height: 250,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    backgroundColor: tanColor,
+    borderRadius: 25,
+  },
+  previewTagContainer:{
+    width: "40%",
+    height: 70,
+    backgroundColor: purpleColor,
+    borderRadius: 25,
+    alignSelf: 'flex-end',
+    position: 'absolute',
+    justifyContent: 'center',
+  },
+  previewTextColumn:{
+    width: "35%",
+    height: '50%',
+    borderRadius: 25,
+    alignSelf: 'flex-start',
+    margin: 10,
+    
+  },
+  previewColumnTitle:{
+    textAlign: 'right',
+    left: 32,
+  },
+  previewColumnText:{
+    fontSize: 20,
+    fontWeight: '300',
+    color: darkPurpleColor,
+    textAlign: 'right',
+  },
+  previewPillTitle: {
+    fontSize: 20,
+    paddingLeft: 18,
+    paddingRight: 18,
+  },
   title: {
     right: 20,
     fontSize: 80,
