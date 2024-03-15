@@ -27,6 +27,14 @@ export default StyleSheet.create({
     color: redColor,
     bottom: 20,
   },
+  usernameTitle: {
+    fontSize: 50,
+    fontWeight: 'bold',
+    color: darkPurpleColor,
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
+  textShadowOffset: { width: -1, height: 3 },
+  textShadowRadius: 10,
+  },
   searchContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -58,12 +66,42 @@ export default StyleSheet.create({
     borderRadius: 50,
     marginLeft: 295-35-20,
   },
+  pillShape:{
+    height: 40,
+    backgroundColor: redColor,
+    borderRadius: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  pillTitle: {
+    paddingLeft: 20,
+    paddingRight: 20,
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: 'white',
+    alignSelf: 'center',
+  },
+  dropDown:{
+    flex: .5,
+    height: 50,
+    backgroundColor: purpleColor,
+  },
+  dropDownTitle: {
+    alignSelf: 'flex-start'
+  },
+  reviewButton:{
+    flex: .35,
+    height: 50,
+    backgroundColor: redColor,
+  },
+  infoPill:{
+    backgroundColor: tanColor,
+  },
   boxContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '80%',
     marginTop: 20,
-    
   },
   box: {
     width: 180,
@@ -102,4 +140,23 @@ export default StyleSheet.create({
     height: 250,
     margin: 10,
   },
+  smallerImage:{
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    width: 170,
+    height: 170,
+    margin: 10,
+  },
+  addShadow:{
+    shadowColor: shadowColor,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+
 });
