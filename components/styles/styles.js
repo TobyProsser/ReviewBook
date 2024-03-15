@@ -2,9 +2,11 @@ import { StyleSheet } from 'react-native';
 
 const darkPurpleColor='#2B0928';
 const purpleColor='#3C2348';
-const redColor='#F24928';
+const orangeColor='#F24928';
+const redColor='#D32714';
 const tanColor='#FFC89B';
 
+const backgroundColor='#FFF1E6';
 const shadowColor='#000';
 
 export default StyleSheet.create({
@@ -13,9 +15,12 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
+  coloredContainer: {
+    backgroundColor: backgroundColor,
+  },
   reviewPreviewContainer: {
     width: '80%',
-    height: 250,
+    height: 270,
     alignItems: 'center',
     justifyContent: 'flex-start',
     backgroundColor: tanColor,
@@ -64,7 +69,7 @@ export default StyleSheet.create({
   },
   secondTitle: {
     paddingLeft: 175,
-    color: redColor,
+    color: orangeColor,
     bottom: 20,
   },
   usernameTitle: {
@@ -101,14 +106,14 @@ export default StyleSheet.create({
   circle: {
     height: 30,
     width: 30,
-    borderColor: redColor,
+    borderColor: orangeColor,
     borderWidth: 5,
     borderRadius: 50,
     marginLeft: 295-35-20,
   },
   pillShape:{
     height: 40,
-    backgroundColor: redColor,
+    backgroundColor: orangeColor,
     borderRadius: 50,
     alignItems: 'center',
     justifyContent: 'center',
@@ -198,5 +203,44 @@ export default StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
   },
-
+  starContainer: { 
+    width: 50,
+    height: 50,
+    justifyContent: "center",
+  },
+starLine: {
+  width: 40,
+  height: 8,
+  borderRadius: 50,
+  backgroundColor: orangeColor,
+  position: "absolute",
+  alignSelf: "center",
+  justifyContent: "center",
+},
+circleButton:{
+  width: 70,
+  height: 70,
+  borderRadius: 50,
+  backgroundColor: 'white',
+},
+arrowButtonLine:{
+  top: 20,
+  width: 45,
+  height: 20,
+  borderRadius: 50,
+  backgroundColor: orangeColor,
+  position: "absolute",
+  alignSelf: "center",
+  justifyContent: "center",
+},
+xButtonLine:{
+  top: 20,
+  width: 50,
+  height: 20,
+  borderRadius: 50,
+  backgroundColor: orangeColor,
+  position: "absolute",
+  alignSelf: "center",
+  justifyContent: "center",
+}
 });
