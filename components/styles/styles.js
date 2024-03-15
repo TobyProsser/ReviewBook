@@ -5,6 +5,8 @@ const purpleColor='#3C2348';
 const redColor='#F24928';
 const tanColor='#FFC89B';
 
+const shadowColor='#000';
+
 export default StyleSheet.create({
   container: {
     flex: 1,
@@ -39,7 +41,7 @@ export default StyleSheet.create({
     marginTop: 20,
     borderRadius: 50,
     position: "absolute",
-    shadowColor: "#000",
+    shadowColor: shadowColor,
   shadowOffset: {
     width: 0,
     height: 2,
